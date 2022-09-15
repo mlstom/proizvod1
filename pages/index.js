@@ -28,7 +28,7 @@ export default function Home() {
       {email &&
         <div className={styles.absolute}>
           <div className={styles.contmail}>
-            <p>Just to be sure that you are human,<br/> enter your mail below</p>
+            <p>Just to be sure that you are human, enter your mail below</p>
             <input style={{ padding: '5px 10px' }} type='email' placeholder='exaple@inkrist.net' value={mail} onChange={(e) => setmail(e.target.value)} />
             <a onClick={() => handle()} style={{ color: '#fff', backgroundColor: '#6c63ff', padding: '5px 10px', borderRadius: '10px', marginTop: '20px', cursor: 'pointer' }}>Start watching now!!! </a>
           </div>
@@ -41,17 +41,15 @@ export default function Home() {
       <main className={styles.main}>
         <h1 style={{ color: '#6c63ff' }} >TRY CLEANER SMILE NOW</h1>
         <div style={{cursor:'pointer'}} onClick={(e) => setemail(true)}>
-          <Image src={slika} />
+          <Image src={slika} alt='pusi kurac' />
         </div>
         <h2 style={{ color: '#6c63ff' }}>Don't miss out on this incredible solution.</h2>
         <p>
           Cleaner Smile was created to help people struggling with tooth stains
           discoloration to enjoy the confidence of a beautiful, bright smile.
-          <br />
           Solutions to whitening are often expensive and inconvenient. Cleaner Smile
           offers an alternative: an easy-to-use system that restores whiteness to
           help you feel confident and live your best life.
-          <br />
           Click the button below now to pick out your Cleaner Smile system and start
           smiling bigger!
         </p>
