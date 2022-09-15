@@ -5,7 +5,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
+span{
+  color:'#6c63ff';
+  text-decoration:'underline';
+  cursor:'pointer'
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -16,7 +20,9 @@ body::-webkit-scrollbar {
 * {
   box-sizing: border-box;
 }
-
+input{
+  padding: '5px 10px'
+}
 
 
 @media (prefers-color-scheme: dark) {
