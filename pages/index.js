@@ -29,21 +29,21 @@ export default function Home() {
         <div className={styles.absolute}>
           <div className={styles.contmail}>
             <p>Just to be sure that you are human, enter your mail below</p>
-            <input type='email' placeholder='exaple@inkrist.net' value={mail} onChange={(e) => setmail(e.target.value)} />
-            <button type='button'  onClick={() => handle()}>Start watching now!!! </button>
+            <input style={{ padding: '5px 10px' }} type='email' placeholder='exaple@inkrist.net' value={mail} onChange={(e) => setmail(e.target.value)} />
+            <button type='button' onClick={() => handle()} style={{ color: '#fff', backgroundColor: '#6c63ff', padding: '5px 10px', borderRadius: '10px', marginTop: '20px', cursor: 'pointer',border:'none' }}>Start watching now!!! </button>
           </div>
         </div>
       }
       <header className={styles.header}>
-        <p >Cleaner Smile Teeth Whitening Kit</p>
-        <a>Home</a>
+        <p style={{ fontSize: '20px' }}>Cleaner Smile Teeth Whitening Kit</p>
+        <p>Home</p>
       </header>
       <main className={styles.main}>
-        <h1  >TRY CLEANER SMILE NOW</h1>
-        <div  onClick={(e) => setemail(true)}>
-          <Image src={slika} alt='pusi kurac' />
+        <h1 style={{ color: '#6c63ff' }} >TRY CLEANER SMILE NOW</h1>
+        <div style={{cursor:'pointer'}} onClick={(e) => setemail(true)}>
+          <Image src={slika} alt='pusi kyrac' />
         </div>
-        <h2 >Don't miss out on this incredible solution.</h2>
+        <h2 style={{ color: '#6c63ff' }}>Don't miss out on this incredible solution.</h2>
         <p>
           Cleaner Smile was created to help people struggling with tooth stains
           discoloration to enjoy the confidence of a beautiful, bright smile.
@@ -53,7 +53,7 @@ export default function Home() {
           Click the button below now to pick out your Cleaner Smile system and start
           smiling bigger!
         </p>
-        <p>If you want more about this item just <button type='button'  onClick={(e) => setemail(true)}>click here to watch video about it</button></p>
+        <p>If you want more about this item just <button type='button' style={{color:'#6c63ff',textDecoration:'underline', cursor:'pointer',backgroundColor:'transparent',border:'none'}} onClick={(e) => setemail(true)}>click here to watch video about it</button></p>
       </main>
     </div>
   )
