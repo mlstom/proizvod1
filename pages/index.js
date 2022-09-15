@@ -22,7 +22,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Cleaner Smile Teeth Whitening Kit</title>
-        <meta name="description" content="" />
+        <meta name="description" content="Mozegospode" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {email &&
